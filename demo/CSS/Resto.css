@@ -1,0 +1,193 @@
+                        * {
+                            padding: 0;
+                            margin: 0;
+                        }
+                        
+                        html,
+                        body {
+                            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+                        }
+                        /* menu ordinateur*/
+                        
+                        .navbar {
+                            text-align: right;
+                            padding: 1.5rem;
+                            background: rgb(63, 19, 19);
+                            position: sticky;
+                            top: 0;
+                        }
+                        
+                        .navbar img {
+                            width: 4rem;
+                            float: left;
+                            margin-top: -1rem;
+                        }
+                        
+                        .navbar a {
+                            color: gainsboro;
+                            text-decoration: none;
+                            padding: 1rem;
+                            transition: all 0.6s ease-in-out;
+                        }
+                        
+                        .navbar a:hover {
+                            background: rgb(180, 104, 104);
+                            color: rgb(63, 19, 19);
+                            padding: 1rem;
+                            border-radius: 5px;
+                        }
+                        /*fin menu ordinateur*/
+                        /*eleman nan meni mobile*/
+                        
+                        #toggler {
+                            opacity: 0;
+                            display: none;
+                        }
+                        
+                        .hamburger {
+                            display: none;
+                        }
+                        
+                        .contenu-img {
+                            background: url('../images/plat.jpg') no-repeat center center/cover;
+                            height: 88vh;
+                        }
+                        
+                        .contenu-text {
+                            background: rgba(78, 59, 59, 0.7);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+                        }
+                        
+                        .contenu-text h2 {
+                            font-family: 'Times New Roman', Times, serif;
+                            color: #fff;
+                            font-size: 8rem;
+                            background: url('../images/ecri.jpg')no-repeat center center/cover;
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            color: transparent;
+                            margin-top: -8rem;
+                        }
+                        
+                        .contenu-text p {
+                            color: #fff;
+                            margin-top: 0.5rem;
+                            position: absolute
+                        }
+                        
+                        .contenu-text a {
+                            color: #fff;
+                            margin-top: 3.3rem;
+                            position: absolute;
+                            text-decoration: none;
+                            background: rgb(63, 19, 19);
+                            padding: 1rem 1.5rem;
+                            display: inline-block;
+                            border-radius: 30px;
+                        }
+                        
+                        .contenu-text a:hover {
+                            background: rgb(180, 104, 104);
+                            color: rgb(63, 19, 19);
+                            font-size: 1.3rem;
+                            transition: all 0.5s ease-in-out;
+                        }
+                        /*menu mobile*/
+                        
+                        @media(max-width: 768px) {
+                            .navbar {
+                                padding: 0.9em;
+                            }
+                            .navbar img {
+                                margin-top: 0.5rem;
+                            }
+                            .menu {
+                                display: none;
+                            }
+                            .hamburger {
+                                display: block;
+                                color: gainsboro;
+                                font-size: 50px;
+                                cursor: pointer;
+                            }
+                            /*activer menu*/
+                            #toggler:checked+.menu {
+                                display: block;
+                            }
+                            .menu a {
+                                display: block;
+                                text-align: center;
+                                background: rgb(63, 19, 19);
+                                margin-bottom: 1rem;
+                                border-radius: 5px;
+                                font-size: 1.3rem;
+                            }
+                            /*animasyon menu mobile*/
+                            .contenu-text h2 {
+                                display: block;
+                                text-align: center;
+                                margin-bottom: 4rem;
+                                font-size: 3.5rem;
+                                transition: all 0.5s ease-in-out;
+                            }
+                            .navbar a:hover {
+                                background: rgb(180, 104, 104);
+                                color: rgb(63, 19, 19);
+                                padding: 1rem;
+                                border-radius: 5px;
+                                font-size: 1.5rem;
+                            }
+                        }
+                        /*end menu mobile*/
+                        /*information*/
+                        
+                        #info {
+                            height: 100vh;
+                            overflow: hidden;
+                            display: flex;
+                            background: rgb(255, 246, 246);
+                        }
+                        
+                        .info-text {
+                            height: 100%;
+                            width: 50%;
+                            padding: 2rem;
+                            text-align: justify;
+                            color: rgb(63, 19, 19);
+                        }
+                        
+                        .info-text h2 {
+                            text-align: center;
+                        }
+                        
+                        .info-text p {
+                            margin-top: 2rem;
+                        }
+                        
+                        .info-text a {
+                            text-decoration: none;
+                            color: #fff;
+                            padding: 1rem 1.5rem;
+                            display: inline-block;
+                            margin-top: 1.5rem;
+                            border-radius: 30px;
+                            background: rgb(63, 19, 19);
+                        }
+                        
+                        .info-text a:hover {
+                            background: rgb(180, 104, 104);
+                            color: rgb(63, 19, 19);
+                            font-size: 1.1rem;
+                            transition: all 0.4 ease-in-out;
+                        }
+                        
+                        .info-img {
+                            height: 90%;
+                            width: 50%;
+                            background: url('../images/ecri.jpg')no-repeat center center/cover;
+                            border-radius: 50%;
+                            margin: 2rem;
+                        }

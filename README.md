@@ -1,2 +1,2 @@
-# demo
+# Resto
 restoTemplate
